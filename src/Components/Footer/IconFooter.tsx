@@ -4,17 +4,18 @@ import c from "../../Images/iconsfooter/C.png"
 import d from "../../Images/iconsfooter/D.png"
 import e from "../../Images/iconsfooter/E.png"
 import f from "../../Images/iconsfooter/F.png"
+import Img from "./StyledFooter/Img"
 const IconFooter = () => {
   return (
     <div>
         <div className="w-[450px] h-[450px] ml-[70px]">
             <div className="flex items-center mt-[50px] ">
-                <img src={a} alt="" className="w-[35px] m-[10px]" />
-                <img src={b} alt="" className="w-[35px] m-[10px]" />
-                <img src={c} alt="" className="w-[35px] m-[10px]" />
-                <img src={d} alt="" className="w-[35px] m-[10px]"/>
-                <img src={e} alt="" className="w-[35px] m-[10px]"/>
-                <img src={f} alt="" className="w-[35px] m-[10px]"/>
+                <Img src={a} alt="" />
+                <Img src={b} alt="" />
+                <Img src={c} alt="" />
+                <Img src={d} alt="" />
+                <Img src={e} alt="" />
+                <Img src={f} alt="" />
             </div>
             <div className="mt-[30px]">
                 <ul>
