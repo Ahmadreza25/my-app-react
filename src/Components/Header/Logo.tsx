@@ -16,9 +16,11 @@ const Logo = () => {
               MENU
             </button>
           </Link>
-          <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
-            REWARDS
-          </button>
+          <Link to="/Rewards">
+            <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
+              REWARDS
+            </button>
+          </Link>
           <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
             GIFT CARDS
           </button>
