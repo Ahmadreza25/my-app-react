@@ -3,7 +3,10 @@ import Benefits from "./Benefits";
 import Score from "./Score";
 import image from "../../Images/imageItem/B.png";
 import imgitem from "../../Images/imagerewards/25.png"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 68f91fe6ae7484c4b9cd2147e9a4fa70cf1a8cdc
 const Rewards = () => {
   return (
     <div>
