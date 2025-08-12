@@ -1,5 +1,6 @@
 import HeadRewards from "./HeadRewards";
 import Benefits from "./Benefits";
+import Score from "./Score";
 import image from "../../Images/imageItem/B.png";
 import imgitem from "../../Images/imagerewards/25.png"
 const Rewards = () => {
@@ -81,19 +82,19 @@ const Rewards = () => {
             <h2 className="font-[800] text-[25px] text-slate-800 mt-[30px]">Get your favorites for free</h2>
             <ul className="flex items-center mt-[40px]">
                 <li className="m-[30px] font-[700] text-[30px]">
-                    25
+                    25⭐
                 </li>
                 <li className="m-[30px] font-[700] text-[30px]">
-                    100
+                    100⭐
                 </li>
                 <li className="m-[30px] font-[700] text-[30px]">
-                    200
+                    200⭐
                 </li>
                 <li className="m-[30px] font-[700] text-[30px]">
-                    300
+                    300⭐
                 </li>
                 <li className="m-[30px] font-[700] text-[30px]">
-                    400
+                    400⭐
                 </li>
             </ul>
         </div>
@@ -110,7 +111,7 @@ const Rewards = () => {
                 </p>
             </div>
         </div>
-        <div>
+        <div className="w-[100%] h-[600px]">
             <Benefits />
         </div>
       </div>
