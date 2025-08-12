@@ -114,6 +114,9 @@ const Rewards = () => {
         <div className="w-[100%] h-[600px]">
             <Benefits />
         </div>
+        <div>
+            <Score />
+        </div>
       </div>
     </div>
   );
