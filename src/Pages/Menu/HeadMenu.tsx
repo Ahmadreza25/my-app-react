@@ -1,20 +1,21 @@
+import LiHead from "./StyledMenu/LiHead"
 const HeadMenu = () => {
   return (
     <div>
         <div className="w-[100%] h-[60px]  bg-slate-100 flex items-center justify-left">
             <ul className="flex items-center ml-[140px]">
-                <li className="ml-[25px] text-[15px] font-[400]">
+                <LiHead>
                     Menu
-                </li>
-                <li className="ml-[25px] text-[15px] font-[400]">
+                </LiHead>
+                <LiHead>
                     Featured
-                </li>
-                <li className="ml-[25px] text-[15px] font-[400]">
+                </LiHead>
+                <LiHead>
                     Previous
-                </li>
-                <li className="ml-[25px] text-[15px] font-[400]">
+                </LiHead>
+                <LiHead>
                     Favorites
-                </li>
+                </LiHead>
             </ul>
         </div>
     </div>

@@ -1,5 +1,9 @@
 import {useState} from 'react'
 import imageItem from "../../../Images/imagemnue/product-placeholder.png"
+import DivMain from './StyledItem/DivMain'
+import DivBox from './StyledItem/DivBox'
+import DivImg from './StyledItem/DivImg'
+import ImgItem from './StyledItem/ImgItem'
 const HomeCoffee = () => {
 const [items , useItems] = useState([
     {
@@ -17,16 +21,16 @@ const [items , useItems] = useState([
 ])
   return (
     <div>
-      <div className="grid grid-cols-2 gap-4 mt-[50px]">
+      <DivMain>
         {items.map((item) => (
-          <div className="flex items-center">
-            <div className="w-[120px] h-[120px] rounded-[100%]">
-              <img src={item.img} alt="" className="w-[100%] rounded-[100%]" />
-            </div>
+          <DivBox>
+            <DivImg>
+              <ImgItem src={item.img} alt=""/>
+            </DivImg>
             <h1 className="ml-[20px] font-[600] text-[20px]">{item.title}</h1>
-          </div>
+          </DivBox>
         ))}
-      </div>
+      </DivMain>
     </div>
   )
 }
