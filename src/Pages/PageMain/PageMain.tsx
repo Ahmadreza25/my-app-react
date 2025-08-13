@@ -3,12 +3,13 @@ import b from "../../Images/imageItem/B.png";
 import c from "../../Images/imageItem/C.png";
 import d from "../../Images/imageItem/D.png";
 import e from "../../Images/imageItem/E.png";
-import MainContainer from "./StyledHome/MainContainer";
-import BodyContainer from "./StyledHome/BodyContainer";
-import DivImage from "./StyledHome/DivImage";
-import BannerImage from "./StyledHome/BannerImage";
-import BoxTitle from "./StyledHome/BoxTitle";
-const Home = () => {
+import MainContainer from "./StyledPsgeMain/MainContainer";
+import BodyContainer from "./StyledPsgeMain/BodyContainer";
+import DivImage from "./StyledPsgeMain/DivImage";
+import BannerImage from "./StyledPsgeMain/BannerImage";
+import BoxTitle from "./StyledPsgeMain/BoxTitle";
+
+const PageMain = () => {
   return (
     <div>
       <MainContainer>
@@ -122,4 +123,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default PageMain;
