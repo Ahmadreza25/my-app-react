@@ -3,16 +3,20 @@ import b from "../../Images/imageItem/B.png";
 import c from "../../Images/imageItem/C.png";
 import d from "../../Images/imageItem/D.png";
 import e from "../../Images/imageItem/E.png";
-
-const PageMain = () => {
+import MainContainer from "./StyledPageMain/MainContainer";
+import BodyContainer from "./StyledPageMain/BodyContainer";
+import DivImage from "./StyledPageMain/DivImage";
+import BannerImage from "./StyledPageMain/BannerImage";
+import BoxTitle from "./StyledPageMain/BoxTitle";
+const Home = () => {
   return (
     <div>
-      <div className="flex items-center justify-center flex-col">
-        <div className="w-[1400px] h-[650px] bg-orange-100 mt-[50px] flex items-center">
-          <div className="w-[700px] h-[650px]">
-            <img src={a} alt="" className="h-[100%] w-[100%]" />
-          </div>
-          <div className="w-[700px] h-[650px] text-center flex items-center flex-col">
+      <MainContainer>
+        <BodyContainer height="650px" bg="#ffedd5">
+          <DivImage height="650px">
+            <BannerImage src={a} alt="" />
+          </DivImage>
+          <BoxTitle height="650px">
             <h1 className="w-[500px] text-[50px] text-center font-bold text-green-800 mt-[100px]">
               Raspberry’s finally back (for now)
             </h1>
@@ -23,10 +27,10 @@ const PageMain = () => {
             <button className="mt-[50px] w-[120px] h-[35px] text-slate-50 bg-green-800 font-bold rounded-[50px]">
               Order now
             </button>
-          </div>
-        </div>
-        <div className="w-[1400px] h-[400px] mt-[50px] flex items-center bg-[#d1d1aa] ">
-          <div className="w-[700px] h-[400px] text-center flex items-center flex-col">
+          </BoxTitle>
+        </BodyContainer>
+        <BodyContainer height="400px" bg="#d1d1aa">
+          <BoxTitle height="400px">
             <h1 className="font-bold text-[25px] mt-[50px]">
               Free drink? Yes, please.
             </h1>
@@ -38,16 +42,16 @@ const PageMain = () => {
             <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
               Join & order
             </button>
-          </div>
-          <div className="w-[700px] h-[400px]">
-            <img src={b} alt="" className="w-[100%] h-[100%]" />
-          </div>
-        </div>
-        <div className="w-[1400px] h-[700px] flex items-center bg-[#d1d1aa] mt-[50px]">
-          <div className="w-[700px] h-[700px]">
-            <img src={c} alt="" className="w-[100%] h-[100%]" />
-          </div>
-          <div className="w-[700px] h-[700px] flex items-center flex-col">
+          </BoxTitle>
+          <DivImage height="400px">
+            <BannerImage src={b} alt="" />
+          </DivImage>
+        </BodyContainer>
+        <BodyContainer height="700px" bg="#d1d1aa">
+          <DivImage height="700px">
+            <BannerImage src={c} alt="" />
+          </DivImage>
+          <BoxTitle height="700px">
             <h1 className="font-bold text-[35px] w-[400px] text-center mt-[50px]">
               Delightful Strato™ Frappuccino® beverages
             </h1>
@@ -59,10 +63,10 @@ const PageMain = () => {
             <button className="mt-[80px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
               Order now
             </button>
-          </div>
-        </div>
-        <div className="w-[1400px] h-[600px] bg-[#d1d1aa] mt-[50px] flex items-center">
-          <div className="w-[700px] h-[600px] text-center flex items-center flex-col">
+          </BoxTitle>
+        </BodyContainer>
+        <BodyContainer height="600px" bg="#d1d1aa">
+          <BoxTitle height="600px">
             <h1 className="font-[800] text-[45px] w-[350px] mt-[70px]">
               Our captivating new collection
             </h1>
@@ -73,16 +77,16 @@ const PageMain = () => {
             <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
               Learn more
             </button>
-          </div>
-          <div className="w-[700px] h-[600px]">
-            <img src={d} alt="" className="w-[100%] h-[600px]" />
-          </div>
-        </div>
-        <div className="w-[1400px] h-[400px] flex items-center bg-[#1e1e1e] mt-[50px] ">
-          <div className="w-[700px] h-[400px]">
-            <img src={e} alt="" className="w-[100%] h-[100%]" />
-          </div>
-          <div className="w-[700px] h-[400px] text-slate-50 flex items-center flex-col">
+          </BoxTitle>
+          <DivImage height="600px">
+            <BannerImage src={d} alt="" />
+          </DivImage>
+        </BodyContainer>
+        <BodyContainer height="400px" bg="#1e1e1e">
+          <DivImage height="400px">
+            <BannerImage src={e} alt="" />
+          </DivImage>
+          <BoxTitle height="400px" className="text-slate-50">
             <h1 className="font-bold text-[25px] mt-[50px]">
               A Private Concert in NYC
             </h1>
@@ -93,8 +97,8 @@ const PageMain = () => {
             <button className="mt-[80px] w-[180px] h-[35px] border-[1px] border-slate-50 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
               Enter Sweepstakes
             </button>
-          </div>
-        </div>
+          </BoxTitle>
+        </BodyContainer>
         <div className="w-[100%] h-[300px] mt-[100px] text-center flex items-center flex-col">
           <h3 className="font-[400] w-[530px] text-[14px]">
             *Valid for new Starbucks Rewards members for 7 days from sign up.
@@ -113,9 +117,9 @@ const PageMain = () => {
             not responsible for the administration of this Sweepstakes.
           </h2>
         </div>
-      </div>
+      </MainContainer>
     </div>
   );
 };
 
-export default PageMain;
+export default Home;
