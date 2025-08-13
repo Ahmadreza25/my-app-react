@@ -1,22 +1,27 @@
-import HeadMenu from "./HeadMenu"
-import ListBtnMenu from "./ListBtnMenu"
-import ItemsMenu from "./ItemsMenu"
+import HeadMenu from "./HeadMenu";
+import ListBtnMenu from "./ListBtnMenu";
+import ItemsMenu from "./ItemsMenu";
+import DivMain from "./StyledMenu/DivMain";
+import DivItemMenu from "./StyledMenu/DivItemMenu";
+
 const Menu = () => {
   return (
     <div>
-        <div>
-            <div className="sticky top-0 z-50"><HeadMenu /></div>
-            <div className="flex items-center h-[2000px]">
-                <div className="h-[1800px] mt-[-150px]">
-                <ListBtnMenu />
-                </div>
-                <div className="h-[1800px] mt-[-150px]">
-                <ItemsMenu />
-                </div>
-            </div>
+      <>
+        <div className="sticky top-0 z-50">
+          <HeadMenu />
         </div>
+        <DivMain>
+          <DivItemMenu>
+            <ListBtnMenu />
+          </DivItemMenu>
+          <DivItemMenu>
+            <ItemsMenu />
+          </DivItemMenu>
+        </DivMain>
+      </>
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

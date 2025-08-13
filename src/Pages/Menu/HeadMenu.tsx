@@ -1,21 +1,21 @@
-import LiHead from "./StyledMenu/LiHead"
+import NavItem from "./StyledMenu/NavItem"
 const HeadMenu = () => {
   return (
     <div>
         <div className="w-[100%] h-[60px]  bg-slate-100 flex items-center justify-left">
             <ul className="flex items-center ml-[140px]">
-                <LiHead>
+                <NavItem>
                     Menu
-                </LiHead>
-                <LiHead>
+                </NavItem>
+                <NavItem>
                     Featured
-                </LiHead>
-                <LiHead>
+                </NavItem>
+                <NavItem>
                     Previous
-                </LiHead>
-                <LiHead>
+                </NavItem>
+                <NavItem>
                     Favorites
-                </LiHead>
+                </NavItem>
             </ul>
         </div>
     </div>

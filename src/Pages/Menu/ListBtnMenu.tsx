@@ -1,39 +1,44 @@
+import MenuItem from "../Menu/StyledMenu/MenuItem"
+import UlList from "./StyledMenu/UlList"
+import DivMargin from "./StyledMenu/DivMargin"
+import MainContainer from "./StyledMenu/MainContainer"
+
 const ListBtnMenu = () => {
   return (
     <div>
-        <div className="w-[450px] h-[1000px] flex flex-col">
-            <div className="ml-[80px] mt-[30px]">
+        <MainContainer width="450px" height="1000px">
+            <DivMargin marginleft="80px" margintop="30px">
                 <h1 className="font-[700] text-[18px]">Drinks</h1>
-                <ul className="mt-[20px]">
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Hot Coffee</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Cold Coffee</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Hot Tea</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Cold Tea</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Refreshers</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Frappuccino® Blended Beverage</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Hot Chocolate, Lemonade & More</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Bottled Beverages</li>
-                </ul>
-            </div>
-            <div className="ml-[80px] mt-[30px]">
+                <UlList>
+                    <MenuItem>Hot Coffee</MenuItem>
+                    <MenuItem>Cold Coffee</MenuItem>
+                    <MenuItem>Hot Tea</MenuItem>
+                    <MenuItem>Cold Tea</MenuItem>
+                    <MenuItem>Refreshers</MenuItem>
+                    <MenuItem>Frappuccino® Blended Beverage</MenuItem>
+                    <MenuItem>Hot Chocolate, Lemonade & More</MenuItem>
+                    <MenuItem>Bottled Beverages</MenuItem>
+                </UlList>
+            </DivMargin>
+            <DivMargin marginleft="80px" margintop="30px">
                 <h1 className="font-[700] text-[18px]">Food</h1>
-                <ul className="mt-[20px]">
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Breakfast</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Bakery</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Treats</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Lunch</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Snacks</li>
-                </ul>
-            </div>
-            <div className="ml-[80px] mt-[30px]">
+                <UlList>
+                    <MenuItem>Breakfast</MenuItem>
+                    <MenuItem>Bakery</MenuItem>
+                    <MenuItem>Treats</MenuItem>
+                    <MenuItem>Lunch</MenuItem>
+                    <MenuItem>Snacks</MenuItem>
+                </UlList>
+            </DivMargin>
+            <DivMargin marginleft="80px" margintop="30px">
                 <h1 className="font-[700] text-[18px]">At Home Coffee</h1>
-                <ul className="mt-[20px]">
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Whole Bean</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">VIA® Instant</li>
-                    <li className="font-[400] text-[18px] text-slate-500 mt-[15px]">Shopping Bag</li>
-                </ul>
-            </div>
-        </div>
+                <UlList>
+                    <MenuItem>Whole Bean</MenuItem>
+                    <MenuItem>VIA® Instant</MenuItem>
+                    <MenuItem>Shopping Bag</MenuItem>
+                </UlList>
+            </DivMargin>
+        </MainContainer>
     </div>
   )
 }

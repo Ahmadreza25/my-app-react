@@ -1,10 +1,12 @@
 import Drinks from "./Item/Drinks";
 import Food from "./Item/Food";
 import HomeCoffee from "./Item/HomeCoffee";
+import MainContainer from "./StyledMenu/MainContainer";
+
 const ItemsMenu = () => {
   return (
     <div>
-      <div className="w-[1000px] h-[800px] flex flex-col">
+      <MainContainer width="1000px" height="800px">
         <div className="w-[100%] h-[800px]">
           <div className=" mt-[20px]">
             <h2 className="font-[700] text-[30px]">Menu</h2>
@@ -33,7 +35,7 @@ const ItemsMenu = () => {
                 <HomeCoffee />
             </div>
         </div>
-      </div>
+      </MainContainer>
     </div>
   );
 };
