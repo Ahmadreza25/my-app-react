@@ -3,11 +3,11 @@ import b from "../../Images/imageItem/B.png";
 import c from "../../Images/imageItem/C.png";
 import d from "../../Images/imageItem/D.png";
 import e from "../../Images/imageItem/E.png";
-import MainContainer from "./StyledPageMain/MainContainer";
-import BodyContainer from "./StyledPageMain/BodyContainer";
-import DivImage from "./StyledPageMain/DivImage";
-import BannerImage from "./StyledPageMain/BannerImage";
-import BoxTitle from "./StyledPageMain/BoxTitle";
+import MainContainer from "./StyledHome/MainContainer";
+import BodyContainer from "./StyledHome/BodyContainer";
+import DivImage from "./StyledHome/DivImage";
+import BannerImage from "./StyledHome/BannerImage";
+import BoxTitle from "./StyledHome/BoxTitle";
 const Home = () => {
   return (
     <div>
