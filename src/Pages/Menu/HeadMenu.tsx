@@ -1,25 +1,20 @@
-import NavItem from "./StyledMenu/NavItem"
+import NavHead from "./StyledMenu/NavHead";
+import NavItem from "./StyledMenu/NavItem";
+import NavList from "./StyledMenu/NavList";
+
 const HeadMenu = () => {
   return (
     <div>
-        <div className="w-[100%] h-[60px]  bg-slate-100 flex items-center justify-left">
-            <ul className="flex items-center ml-[140px]">
-                <NavItem>
-                    Menu
-                </NavItem>
-                <NavItem>
-                    Featured
-                </NavItem>
-                <NavItem>
-                    Previous
-                </NavItem>
-                <NavItem>
-                    Favorites
-                </NavItem>
-            </ul>
-        </div>
+      <NavHead>
+        <NavList>
+          <NavItem>Menu</NavItem>
+          <NavItem>Featured</NavItem>
+          <NavItem>Previous</NavItem>
+          <NavItem>Favorites</NavItem>
+        </NavList>
+      </NavHead>
     </div>
-  )
-}
+  );
+};
 
-export default HeadMenu
+export default HeadMenu;

@@ -1,8 +1,8 @@
 import HeadMenu from "./HeadMenu";
 import ListBtnMenu from "./ListBtnMenu";
 import ItemsMenu from "./ItemsMenu";
-import DivMain from "./StyledMenu/DivMain";
 import DivItemMenu from "./StyledMenu/DivItemMenu";
+import BodyContainer from "./StyledMenu/BodyContainer";
 
 const Menu = () => {
   return (
@@ -11,14 +11,14 @@ const Menu = () => {
         <div className="sticky top-0 z-50">
           <HeadMenu />
         </div>
-        <DivMain>
+        <BodyContainer>
           <DivItemMenu>
             <ListBtnMenu />
           </DivItemMenu>
           <DivItemMenu>
             <ItemsMenu />
           </DivItemMenu>
-        </DivMain>
+        </BodyContainer>
       </>
     </div>
   );

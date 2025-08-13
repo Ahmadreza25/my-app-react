@@ -4,6 +4,7 @@ import DivMain from './StyledItem/DivMain'
 import DivBox from './StyledItem/DivBox'
 import DivImg from './StyledItem/DivImg'
 import ImgItem from './StyledItem/ImgItem'
+import TitleItem from './StyledItem/TitleItem'
 const Food = () => {
 const [items , useItems] = useState([
     {
@@ -35,7 +36,7 @@ const [items , useItems] = useState([
             <DivImg>
               <ImgItem src={item.img} alt=""/>
             </DivImg>
-            <h1 className="ml-[20px] font-[600] text-[20px]">{item.title}</h1>
+            <TitleItem>{item.title}</TitleItem>
           </DivBox>
         ))}
       </DivMain>
