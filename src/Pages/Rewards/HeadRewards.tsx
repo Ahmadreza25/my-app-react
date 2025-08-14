@@ -1,13 +1,17 @@
+import DivMargin from "./StyledRewards/DivMargin";
+import NavTitle from "./StyledRewards/NavTitle";
+import NavHead from "./StyledRewards/NavHead";
+
 const HeadRewards = () => {
   return (
     <div>
-        <div className='w-[100%] h-[50px] bg-green-950 flex items-center'>
-            <div className='ml-[80px]'>
-                <h3 className='text-slate-50 font-bold text-[17px]'>Starbucks® Rewards</h3>
-            </div>
-        </div>
+      <NavHead>
+        <DivMargin marginleft="80px">
+          <NavTitle>Starbucks® Rewards</NavTitle>
+        </DivMargin>
+      </NavHead>
     </div>
-  )
-}
+  );
+};
 
-export default HeadRewards
+export default HeadRewards;

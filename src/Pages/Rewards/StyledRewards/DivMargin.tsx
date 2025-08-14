@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 interface DivMarginProps{
 
-    marginleft:string;
-    margintop:string;
-    marginright:string;
-    marginbottom:string;
+    marginleft?:string;
+    margintop?:string;
+    marginright?:string;
+    marginbottom?:string;
     
 }
 
