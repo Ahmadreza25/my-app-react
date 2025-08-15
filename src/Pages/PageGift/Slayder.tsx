@@ -9,6 +9,8 @@ import s7 from "../../Images/imageSlyder/s7.png";
 import s8 from "../../Images/imageSlyder/s8.png";
 import FlexBox from "./StyledPageGift/FlexBox";
 import MainDivSlayder from "./StyledPageGift/MainDivSlayder";
+import CardDiv from "./StyledPageGift/CardDiv";
+import SlayderBtn from "./StyledPageGift/SlayderBtn";
 
 const images = [s1, s2, s3, s4, s5, s6, s7, s8];
 
@@ -33,30 +35,28 @@ const Slider = () => {
         <MainDivSlayder>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {products.map((img, index) => (
-              <div className="w-[300px] hover:mt-[-8px] transition-[margin-top] duration-300 ease-in-out">
+              <CardDiv>
                 <img
                   key={index}
                   src={img}
                   alt={`Slide ${items + index}`}
                   className="w-[100%] h-48 object-cover rounded-lg transition-all duration-500"
                 />
-              </div>
+              </CardDiv>
             ))}
           </div>
-          <button
+          <SlayderBtn
             onClick={handilePrev}
-            className="absolute top-1/2 left-[-50px] -translate-y-1/2 bg-slate-100 text-slate-500 
-            w-[40px] h-[40px] font-[700] text-[20px]  rounded-full hover:bg-slate-400 z-10 flex items-center justify-center"
+            left="-50px"
           >
             {"<"}
-          </button>
-          <button
+          </SlayderBtn>
+          <SlayderBtn 
             onClick={handilnext}
-            className="absolute top-1/2 right-[-50px] -translate-y-1/2 bg-slate-100 text-slate-500 
-            w-[40px] h-[40px] font-[700] text-[20px]  rounded-full hover:bg-slate-400 z-10 flex items-center justify-center"
+            right="-50px"
           >
             {">"}
-          </button>
+          </SlayderBtn>
         </MainDivSlayder>
       </FlexBox>
     </div>
