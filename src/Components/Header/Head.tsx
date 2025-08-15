@@ -4,7 +4,7 @@ import makan from "../../Images/icons/makan.png";
 const Head = () => {
   const location = useLocation();
 
-  const pagehidd = ["/signin"];
+  const pagehidd = ["/signin", "/createaccount"];
 
   if (pagehidd.includes(location.pathname)) {
     return null;
@@ -34,15 +34,17 @@ const Head = () => {
             </Link>
           </div>
           <div>
-            <button
-              className="                    
+            <Link to="/createaccount">
+              <button
+                className="                    
                      w-[100px] h-[30px] border-[1px] 
                     border-slate-900 rounded-[50px] 
                     font-medium text-[14px] mr-[20px] 
                     hover:bg-slate-700 text-slate-100 bg-slate-900"
-            >
-              join now
-            </button>
+              >
+                join now
+              </button>
+            </Link>
           </div>
         </div>
       }
