@@ -1,7 +1,11 @@
 import logo from "../../Images/logo/logo-header.png";
-import { Link } from "react-router-dom";
+import { Link , useLocation } from "react-router-dom";
 
 const Logo = () => {
+  const location = useLocation()
+
+  const pagehidd = ['/signin']
+
   return (
     <div>
       <div className="flex items-center justify-center ml-[50px]">
@@ -10,6 +14,7 @@ const Logo = () => {
             <img src={logo} alt="" />
           </div>
         </Link>
+        {!pagehidd.includes(location.pathname.toLowerCase()) && (
         <div className="ml-[30px]">
           <Link to="/Menu">
             <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
@@ -27,6 +32,7 @@ const Logo = () => {
             </button>
           </Link>
         </div>
+        )}
       </div>
     </div>
   );

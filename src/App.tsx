@@ -6,6 +6,7 @@ import Menu from './Pages/Menu/Menu';
 import Rewards from './Pages/Rewards/Rewards';
 import PageMain from './Pages/PageMain/PageMain';
 import PageGift from './Pages/PageGift/PageGift';
+import PageSignIn from './Pages/PageSignIn/PageSignIn';
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/Menu' element={<Menu />}/>
       <Route path='/Rewards' element={<Rewards />}/>
       <Route path='/Gift' element={<PageGift/>} />
+      <Route path='/signin' element={<PageSignIn />}/>
     </Routes>
     <Footer />
   </BrowserRouter>
