@@ -3,6 +3,7 @@ import b from "../../Images/imageItem/B.png";
 import c from "../../Images/imageItem/C.png";
 import d from "../../Images/imageItem/D.png";
 import e from "../../Images/imageItem/E.png";
+import { Link } from "react-router-dom";
 import MainContainer from "./StyledPsgeMain/MainContainer";
 import BodyContainer from "./StyledPsgeMain/BodyContainer";
 import DivImage from "./StyledPsgeMain/DivImage";
@@ -40,9 +41,11 @@ const PageMain = () => {
               when you make a qualifying purchase during your first week as a
               Starbucks® Rewards member.*
             </h2>
+            <Link to="/createaccount">
             <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
               Join & order
             </button>
+            </Link>
           </BoxTitle>
           <DivImage height="400px">
             <BannerImage src={b} alt="" />

@@ -1,10 +1,10 @@
-import MenuItem from "../Menu/StyledMenu/MenuItem";
-import UlList from "./StyledMenu/UlList";
-import DivMargin from "./StyledMenu/DivMargin";
-import MainContainer from "./StyledMenu/MainContainer";
-import SectionTitle from "./StyledMenu/SectionTitle";
+import MenuItem from "./StyledListMenu/MenuItem";
+import UlList from "./StyledListMenu/UlList";
+import DivMargin from "./StyledListMenu/DivMargin";
+import MainContainer from "./StyledListMenu/MainContainer";
+import SectionTitle from "./StyledListMenu/SectionTitle";
 
-const ListBtnMenu = () => {
+const ListMenu = () => {
   return (
     <div>
       <MainContainer width="450px" height="1000px">
@@ -44,4 +44,4 @@ const ListBtnMenu = () => {
   );
 };
 
-export default ListBtnMenu;
+export default ListMenu;

@@ -1,5 +1,5 @@
 import HeadMenu from "./HeadMenu";
-import ListBtnMenu from "./ListBtnMenu";
+import ListMenu from "../../Components/ListMenu/ListMenu";
 import ItemsMenu from "./ItemsMenu";
 import DivItemMenu from "./StyledMenu/DivItemMenu";
 import BodyContainer from "./StyledMenu/BodyContainer";
@@ -13,7 +13,7 @@ const Menu = () => {
         </div>
         <BodyContainer>
           <DivItemMenu>
-            <ListBtnMenu />
+            <ListMenu />
           </DivItemMenu>
           <DivItemMenu>
             <ItemsMenu />
