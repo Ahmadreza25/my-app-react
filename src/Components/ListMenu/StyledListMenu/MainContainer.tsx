@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface DivBoxProps  {
-    width:string;
-    height:string;
+    width?:string;
+    height?:string;
 }
 
 

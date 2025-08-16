@@ -7,7 +7,7 @@ import SectionTitle from "./StyledListMenu/SectionTitle";
 const ListMenu = () => {
   return (
     <div>
-      <MainContainer width="450px" height="1000px">
+      <MainContainer width="450px">
         <DivMargin marginleft="80px" margintop="30px">
           <SectionTitle>Drinks</SectionTitle>
           <UlList>

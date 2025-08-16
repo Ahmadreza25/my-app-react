@@ -26,9 +26,11 @@ const PageMain = () => {
               Add raspberry syrup to your favorite drinks for a very limited
               time. Plus try the new Raspberry Cream Cold Brew.
             </h3>
+            <Link to='/order'>
             <button className="mt-[50px] w-[120px] h-[35px] text-slate-50 bg-green-800 font-bold rounded-[50px]">
               Order now
             </button>
+            </Link>
           </BoxTitle>
         </BodyContainer>
         <BodyContainer height="400px" bg="#d1d1aa">
