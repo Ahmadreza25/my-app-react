@@ -7,14 +7,15 @@ import ContentWrapper from "./StyledRewards/ContentWrapper";
 import LayoutBox from "./StyledRewards/LayoutBox";
 import TitleItem from "./StyledRewards/TitleItem";
 import ImageItem from "./StyledRewards/ImageItem";
+import StickyWrapper from "./StyledRewards/StickyWrapper";
 
 const Rewards = () => {
   return (
     <div>
       <div>
-        <div className="sticky top-0 z-50">
+        <StickyWrapper>
           <HeadRewards />
-        </div>
+        </StickyWrapper>
         <ContentWrapper>
           <LayoutBox width="750px" height="450px">
             <div className="flex flex-col ml-[200px]">

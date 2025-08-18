@@ -1,0 +1,15 @@
+import styled from "styled-components";
+
+
+
+const BoxItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+`
+
+
+export default BoxItem

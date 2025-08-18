@@ -3,14 +3,15 @@ import ListMenu from "../../Components/ListMenu/ListMenu";
 import ItemsMenu from "./ItemsMenu";
 import DivItemMenu from "./StyledMenu/DivItemMenu";
 import BodyContainer from "./StyledMenu/BodyContainer";
+import SectionTitle from "./StyledMenu/SectionTitle";
 
 const Menu = () => {
   return (
     <div>
       <>
-        <div className="sticky top-0 z-50">
+        <SectionTitle>
           <HeadMenu />
-        </div>
+        </SectionTitle>
         <BodyContainer>
           <DivItemMenu>
             <ListMenu />

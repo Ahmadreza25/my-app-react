@@ -1,69 +1,85 @@
+import { useState } from "react";
+
 import ListMenu from "../../Components/ListMenu/ListMenu";
 import imgitem from "../../Images/imagemnue/product-placeholder.png";
 import HeadMenu from "../Menu/HeadMenu";
+import StickyWrapper from "./StyledPageOrder/StickyWrapper";
+import FormBox from "./StyledPageOrder/FormBox";
+import FlexItems from "./StyledPageOrder/FlexItems";
+import LainDiv from "./StyledPageOrder/LainDiv";
+import ListTitle from "./StyledPageOrder/ListTitles";
+import Title from "./StyledPageOrder/Title";
+import ListItems from "./StyledPageOrder/ListItems";
+import ImageItems from "./StyledPageOrder/ImageItems";
+import BoxItem from "./StyledPageOrder/BoxItem";
+import DivImage from "./StyledPageOrder/DivImage";
 const PageOrder = () => {
+  const [product, setProduct] = useState([
+    {
+      image: imgitem,
+      title1: "Brown Sugar",
+      title2: "Strato™",
+      title3: "Frappuccino®",
+      title4: "Blended Beverage",
+    },
+    {
+      image: imgitem,
+      title1: "Strawberry Matcha",
+      title2: "Strato™",
+      title3: "Frappuccino®",
+      title4: "Blended Beverage",
+    },
+    {
+      image: imgitem,
+      title1: "Salted Caramel",
+      title2: "Mocha Strato™ Frappuccino®",
+      title3: "Blended Beverage",
+    },
+  ]);
   return (
     <div>
-      <div className="sticky top-0 z-50">
+      <StickyWrapper>
         <HeadMenu />
-      </div>
-      <div className="flex items-center">
-        <div className="h-[1000px]">
+      </StickyWrapper>
+      <FlexItems>
+        <FormBox height="1000px">
           <ListMenu />
-        </div>
-        <div className="h-[1000px] mt-[50px]">
+        </FormBox>
+        <FormBox height="1000px" margintop="50px">
           <div>
-            <p className="font-[600] text-slate-600">
+            <Title color="#475569" font="600">
               Menu / Frappuccino® Blended Beverage / Strato Frappuccino®
-            </p>
-            <p className="mt-[30px] font-[700] text-[23px]">
+            </Title>
+            <Title
+              margintop="30px"
+              font="700"
+              size="23px"
+              className="mt-[30px] font-[700] text-[23px]"
+            >
               Frappuccino® Blended Beverage
-            </p>
-            <p className="mt-[30px]">Strato Frappuccino®</p>
+            </Title>
+            <Title margintop="30px">Strato Frappuccino®</Title>
           </div>
-          <div className="w-[800px] h-[1px] bg-slate-600 mt-[70px]"></div>
-          <div className="flex items-center mt-[100px]">
-            <div className="flex items-center justify-center flex-col w-[250px] h-[300px]">
-              <div className="w-[100px] h-[100px] rounded-[50%]">
-                <img src={imgitem} alt="" className="rounded-[50%]" />
-              </div>
-              <div className="w-[100%] h-[200px] flex items-center justify-center">
-                <ul className="text-center">
-                  <li>Brown Sugar</li>
-                  <li>Strato™</li>
-                  <li>Frappuccino®</li>
-                  <li>Blended Beverage</li>
-                </ul>
-              </div>
-            </div>
-            <div className="m-[20px] flex items-center justify-center flex-col w-[250px] h-[300px]">
-              <div className="w-[100px] h-[100px] rounded-[50%]">
-                <img src={imgitem} alt="" className="rounded-[50%]" />
-              </div>
-              <div className="w-[100%] h-[200px] flex items-center justify-center">
-                <ul className="text-center">
-                  <li>Strawberry Matcha</li>
-                  <li>Strato™</li>
-                  <li>Frappuccino®</li>
-                  <li>Blended Beverage</li>
-                </ul>
-              </div>
-            </div>
-            <div className="m-[20px] flex items-center justify-center flex-col w-[250px] h-[300px]">
-              <div className="w-[100px] h-[100px] rounded-[50%]">
-                <img src={imgitem} alt="" className="rounded-[50%]" />
-              </div>
-              <div className="w-[100%] h-[200px] flex items-center justify-center">
-                <ul className="text-center">
-                  <li>Salted Caramel</li>
-                  <li>Mocha Strato™ Frappuccino®</li>
-                  <li>Blended Beverage</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <LainDiv></LainDiv>
+          <FlexItems margintop="100px">
+            {product.map((item) => (
+              <BoxItem>
+                <DivImage>
+                  <ImageItems src={item.image} alt="" />
+                </DivImage>
+                <FlexItems width="100%" height="200px" justify="center">
+                  <ListTitle>
+                    <ListItems>{item.title1}</ListItems>
+                    <ListItems>{item.title2}</ListItems>
+                    <ListItems>{item.title3}</ListItems>
+                    <ListItems>{item.title4}</ListItems>
+                  </ListTitle>
+                </FlexItems>
+              </BoxItem>
+            ))}
+          </FlexItems>
+        </FormBox>
+      </FlexItems>
     </div>
   );
 };
