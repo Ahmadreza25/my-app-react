@@ -9,6 +9,7 @@ import PageGift from './Pages/PageGift/PageGift';
 import PageSignIn from './Pages/PageSignIn/PageSignIn';
 import PageCreateAccount from './Pages/PageCreateAccount/PageCreateAccount';
 import PageOrder from './Pages/PageOrder/PageOrder';
+import PageItemsCold from './Pages/PageItemsCold/PageItemsCold';
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path='/signin' element={<PageSignIn />}/>
       <Route path='/createaccount' element={<PageCreateAccount />}/>
       <Route path='/order' element={<PageOrder />}/>
+      <Route path='/itemscold'element={<PageItemsCold />}/>
     </Routes>
     <Footer />
   </BrowserRouter>

@@ -66,9 +66,11 @@ const PageMain = () => {
               Sugar, Salted Caramel Mocha and Strawberry Matcha. Get them while
               you can—for a limited time.
             </h2>
+            <Link to="/itemscold">
             <button className="mt-[80px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
               Order now
             </button>
+            </Link>
           </BoxTitle>
         </BodyContainer>
         <BodyContainer height="600px" bg="#d1d1aa">
