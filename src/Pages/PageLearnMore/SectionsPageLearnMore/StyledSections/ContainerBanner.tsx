@@ -5,9 +5,10 @@ import styled from "styled-components";
 const ContainerBanner = styled.div`
     display: flex;
     align-items: center;
-    width: 1500px;
+    width: 1520px;
     height: 700px;
-    background-color: #ecfccb; 
+    background-color:#d1d1aa; 
+    margin-top:-1px;
 `
 
 
