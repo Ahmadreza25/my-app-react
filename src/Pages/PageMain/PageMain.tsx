@@ -26,10 +26,10 @@ const PageMain = () => {
               Add raspberry syrup to your favorite drinks for a very limited
               time. Plus try the new Raspberry Cream Cold Brew.
             </h3>
-            <Link to='/order'>
-            <button className="mt-[50px] w-[120px] h-[35px] text-slate-50 bg-green-800 font-bold rounded-[50px]">
-              Order now
-            </button>
+            <Link to="/order">
+              <button className="mt-[50px] w-[120px] h-[35px] text-slate-50 bg-green-800 font-bold rounded-[50px]">
+                Order now
+              </button>
             </Link>
           </BoxTitle>
         </BodyContainer>
@@ -44,9 +44,9 @@ const PageMain = () => {
               Starbucks® Rewards member.*
             </h2>
             <Link to="/createaccount">
-            <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
-              Join & order
-            </button>
+              <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
+                Join & order
+              </button>
             </Link>
           </BoxTitle>
           <DivImage height="400px">
@@ -67,9 +67,9 @@ const PageMain = () => {
               you can—for a limited time.
             </h2>
             <Link to="/itemscold">
-            <button className="mt-[80px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
-              Order now
-            </button>
+              <button className="mt-[80px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
+                Order now
+              </button>
             </Link>
           </BoxTitle>
         </BodyContainer>
@@ -82,9 +82,11 @@ const PageMain = () => {
               Nigerian-American artist Shadé Akanbi blends tradition and
               modernity to create rich prints and patterns. For a limited time.
             </h2>
-            <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
-              Learn more
-            </button>
+            <Link to="/learnmore">
+              <button className="mt-[50px] w-[120px] h-[35px] border-[1px] border-slate-900 rounded-[50px] font-bold hover:bg-slate-400 transition-colors duration-300 ease">
+                Learn more
+              </button>
+            </Link>
           </BoxTitle>
           <DivImage height="600px">
             <BannerImage src={d} alt="" />

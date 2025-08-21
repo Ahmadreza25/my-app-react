@@ -10,6 +10,7 @@ import PageSignIn from './Pages/PageSignIn/PageSignIn';
 import PageCreateAccount from './Pages/PageCreateAccount/PageCreateAccount';
 import PageOrder from './Pages/PageOrder/PageOrder';
 import PageItemsCold from './Pages/PageItemsCold/PageItemsCold';
+import PageLearnMore from './Pages/PageLearnMore/PageLearnMore';
 function App() {
 
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/createaccount' element={<PageCreateAccount />}/>
       <Route path='/order' element={<PageOrder />}/>
       <Route path='/itemscold'element={<PageItemsCold />}/>
+      <Route path='/learnmore' element={<PageLearnMore />}/>
     </Routes>
     <Footer />
   </BrowserRouter>
