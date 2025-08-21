@@ -8,7 +8,7 @@ const PageLearnMore = () => {
         <StickyWrapper>
           <HeaderLesrnMore />
         </StickyWrapper>
-        <div>
+        <div className="flex items-center justify-center">
           <BannerLearnMore />
         </div>
       </div>
