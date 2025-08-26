@@ -7,30 +7,34 @@ import image1 from "../../../Images/imageLearnMore/image1.png";
 import image2 from "../../../Images/imageLearnMore/image2.png";
 import FlexItems from "./StyledSections/FlexItems";
 import FormBox from "./StyledSections/FormBox";
+import ContainerColumn from "./StyledSections/ContainerColumn";
+import DivIcon from "./StyledSections/DivIcon";
+import Icon from "./StyledSections/Icon";
+import ButtonDownload from "./StyledSections/ButtonDownload";
 const AboutUsSection = () => {
   return (
     <div>
       <DivMargin margintop="50px">
         <FlexItems width="1500px" height="2500px">
-          <div className="w-[500px] h-[2500px] flex items-center flex-col">
+          <ContainerColumn width="500px" height="2500px">
             <FlexItems className="flex items-center">
-              <div className="w-[50px] h-[50px] border-2 border-green-700 rounded-[100%] flex items-center justify-center m-[10px]">
-                <img src={i2} alt="" className="w-[20px]" />
-              </div>
-              <div className="w-[50px] h-[50px] border-2 border-green-700 rounded-[100%] flex items-center justify-center m-[10px]">
-                <img src={i3} alt="" className="w-[20px]" />
-              </div>
-              <div className="w-[50px] h-[50px] border-2 border-green-700 rounded-[100%] flex items-center justify-center m-[10px]">
-                <img src={i4} alt="" className="w-[20px]" />
-              </div>
+              <DivIcon>
+                <Icon src={i2} alt="" width="20px"/>
+              </DivIcon>
+              <DivIcon>
+                <Icon src={i3} alt="" width="20px"/>
+              </DivIcon>
+              <DivIcon>
+                <Icon src={i4} alt="" width="20px"/>
+              </DivIcon>
             </FlexItems>
             <DivMargin margintop="20px">
-              <button className="flex items-center font-[300]">
+              <ButtonDownload className="flex items-center font-[300]">
                 Download Assets{" "}
-                <img src={i1} alt="" className="w-[18px] ml-[20px]" />
-              </button>
+                <Icon src={i1} alt="" width="18px" marginleft="20px" />
+              </ButtonDownload>
             </DivMargin>
-          </div>
+          </ContainerColumn>
           <FormBox width="1000px" height="2500px" className="w-[1000px] h-[2500px] ">
             <div className="w-[700px] h-[40px] border-b-[1px] border-t-[1px] border-slate-300 flex items-center">
               <p className="font-[300] text-[15px] text-slate-500">
@@ -118,20 +122,20 @@ const AboutUsSection = () => {
               <FormBox width="350px" height="100%">
                 <img src={image2} alt="" className="w-[100%] h-[100%]" />
               </FormBox>
-              <div className="w-[350px] h-[100%]">
+              <FormBox width="350px" height="100%">
                 <div className="w-[100%] h-[550px] bg-orange-100">
-                  <div className="ml-[50px]">
+                  <DivMargin marginleft="50px">
                     <p className="font-[900] text-9xl text-green-700">،،</p>
                     <p className="w-[250px] font-[300] text-[25px] text-slate-700">
                       I love going back to the [African] continent – I’ve
                       traveled to the west, east, north and south,” she said.
                       “We’re more alike than different, and art connects us.”{" "}
                     </p>
-                  </div>
+                  </DivMargin>
                 </div>
-              </div>
+              </FormBox>
             </FlexItems>
-            <div className="w-[700px] h-[500px] mt-[50px]">
+            <FormBox width="700px" height="500px" margintop="50px">
               <p className="mt-[20px] font-[600] text-[20px]">
                 With every visit, she spent time in markets and workshops and
                 saw textile weavers and beaders at work. She watched as they
@@ -148,7 +152,7 @@ const AboutUsSection = () => {
                 Akanbi’s collection of drinkware is available at participating
                 U.S. stores for a limited time, while supplies last.{" "}
               </p>
-            </div>
+            </FormBox>
           </FormBox>
         </FlexItems>
         <div></div>
