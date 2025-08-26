@@ -5,13 +5,15 @@ import i3 from "../../../Images/icons/link.png";
 import i4 from "../../../Images/icons/linkedin.png";
 import image1 from "../../../Images/imageLearnMore/image1.png";
 import image2 from "../../../Images/imageLearnMore/image2.png";
+import FlexItems from "./StyledSections/FlexItems";
+import FormBox from "./StyledSections/FormBox";
 const AboutUsSection = () => {
   return (
     <div>
       <DivMargin margintop="50px">
-        <div className="w-[1500px] h-[2500px] flex items-center">
+        <FlexItems width="1500px" height="2500px">
           <div className="w-[500px] h-[2500px] flex items-center flex-col">
-            <div className="flex items-center">
+            <FlexItems className="flex items-center">
               <div className="w-[50px] h-[50px] border-2 border-green-700 rounded-[100%] flex items-center justify-center m-[10px]">
                 <img src={i2} alt="" className="w-[20px]" />
               </div>
@@ -21,15 +23,15 @@ const AboutUsSection = () => {
               <div className="w-[50px] h-[50px] border-2 border-green-700 rounded-[100%] flex items-center justify-center m-[10px]">
                 <img src={i4} alt="" className="w-[20px]" />
               </div>
-            </div>
-            <div className="mt-[20px]">
+            </FlexItems>
+            <DivMargin margintop="20px">
               <button className="flex items-center font-[300]">
                 Download Assets{" "}
                 <img src={i1} alt="" className="w-[18px] ml-[20px]" />
               </button>
-            </div>
+            </DivMargin>
           </div>
-          <div className="w-[1000px] h-[2500px] ">
+          <FormBox width="1000px" height="2500px" className="w-[1000px] h-[2500px] ">
             <div className="w-[700px] h-[40px] border-b-[1px] border-t-[1px] border-slate-300 flex items-center">
               <p className="font-[300] text-[15px] text-slate-500">
                 3 min read
@@ -39,8 +41,8 @@ const AboutUsSection = () => {
                 July 7, 2025
               </p>
             </div>
-            <div className="mt-[50px] w-[700px] h-[400px] flex items-center">
-              <div className="w-[400px] h-[400px]">
+            <FlexItems margintop="50px" width="700px" height="400px">
+              <FormBox width="400px" height="400px">
                 <p className="font-[600] text-[20px] w-[320px]">
                   Shadé Akanbi found herself in a creative rut during the midst
                   of the pandemic. As a{" "}
@@ -52,12 +54,12 @@ const AboutUsSection = () => {
                   “Pattern of the Dae” daily art practice and posted each one to
                   her followers on social media.
                 </p>
-              </div>
-              <div className="w-[300px] h-[400px]">
+              </FormBox>
+              <FormBox width="300px" height="400px">
                 <img src={image1} alt="" className="w-[300px] h-[100%]" />
-              </div>
-            </div>
-            <div className="w-[700px] h-[300px] mt-[50px]">
+              </FormBox>
+            </FlexItems>
+            <FormBox width="700px" height="300px" margintop="50px">
               <p className="font-[500] text-[18px]">
                 “So much of what I create comes from my cultural background and
                 my travels,” Akanbi said. “During quarantine, I needed to keep
@@ -77,10 +79,10 @@ const AboutUsSection = () => {
                   There are no mistakes.{" "}
                 </li>
               </ol>
-            </div>
+            </FormBox>
             <div className="w-[700px] h-[150px] flex items-center justify-center">
               <div className="w-[1px] h-[100%] bg-slate-700"></div>
-              <div className="w-[700px] h-[150px]">
+              <FormBox width="700px" height="150px">
                 <p className="mt-[-50px] font-[900] text-9xl text-green-700">
                   ،،
                 </p>
@@ -90,10 +92,10 @@ const AboutUsSection = () => {
                     exercise.”
                   </p>
                   <p className="mt-[20px] text-[13px]">Shadé Akanbi</p>
-                </div>
-              </div>
+                  </div>
+              </FormBox>
             </div>
-            <div className="mt-[50px] w-[700px] h-[400px]">
+            <FormBox margintop="50px" width="700px" height="400px">
               <p className="font-[600] text-[18px]">
                 Each day, Akanbi opened a new page of her sketchbook. She would
                 start with a ruler for geometric patterns but would often just
@@ -111,11 +113,11 @@ const AboutUsSection = () => {
                 was transformative, and she has returned to the continent time
                 and time again.
               </p>
-            </div>
-            <div className="w-[700px] h-[700px] flex items-center">
-              <div className="w-[350px] h-[100%]">
+            </FormBox>
+            <FlexItems width="700px" height="700px">
+              <FormBox width="350px" height="100%">
                 <img src={image2} alt="" className="w-[100%] h-[100%]" />
-              </div>
+              </FormBox>
               <div className="w-[350px] h-[100%]">
                 <div className="w-[100%] h-[550px] bg-orange-100">
                   <div className="ml-[50px]">
@@ -128,7 +130,7 @@ const AboutUsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </FlexItems>
             <div className="w-[700px] h-[500px] mt-[50px]">
               <p className="mt-[20px] font-[600] text-[20px]">
                 With every visit, she spent time in markets and workshops and
@@ -147,8 +149,8 @@ const AboutUsSection = () => {
                 U.S. stores for a limited time, while supplies last.{" "}
               </p>
             </div>
-          </div>
-        </div>
+          </FormBox>
+        </FlexItems>
         <div></div>
       </DivMargin>
     </div>
