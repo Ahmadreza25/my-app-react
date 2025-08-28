@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-interface FormBoxProps {
-    width?:string
-    height?:string
-    bgColor?:string
+interface LainProps{
+
     marginleft?:string;
     margintop?:string;
     marginright?:string;
     marginbottom?:string;
+    
 }
 
-const FormBox = styled.div<FormBoxProps>`
-    width:${props => props.width};
-    height:${props => props.height};
-    background-color: ${props => props.bgColor};
+const Lain = styled.div<LainProps>`
+    width: 1px;
+    height: 100%;
+    background-color: #cbd5e1;
     margin-left: ${props => props.marginleft};
     margin-top: ${props => props.margintop};
     margin-right: ${props => props.marginright};
     margin-bottom: ${props => props.marginbottom};
 `
 
-export default FormBox
+
+export default Lain
