@@ -5,6 +5,8 @@ import i3 from "../../../Images/icons/link.png";
 import i4 from "../../../Images/icons/linkedin.png";
 import image1 from "../../../Images/imageLearnMore/image1.png";
 import image2 from "../../../Images/imageLearnMore/image2.png";
+import image6 from "../../../Images/imageLearnMore/image6.png";
+import image7 from "../../../Images/imageLearnMore/image7.png";
 import FlexItems from "./StyledSections/FlexItems";
 import FormBox from "./StyledSections/FormBox";
 import ContainerColumn from "./StyledSections/ContainerColumn";
@@ -20,6 +22,8 @@ import Image from "./StyledSections/Image";
 import DivText from "./StyledSections/DivText";
 import NumberedList from "./StyledSections/NumberedList";
 import ListItem from "./StyledSections/ListItem";
+import CenteredSection from "./StyledSections/CenteredSection";
+import ButtonMerch from "./StyledSections/ButtonMerch";
 const AboutUsSection = () => {
   return (
     <div>
@@ -170,9 +174,42 @@ const AboutUsSection = () => {
             </FormBox>
           </FormBox>
         </FlexItems>
-        <FormBox>
-
-        </FormBox>
+        <CenteredSection>
+          <Title font="900" size="45px" margintop="50px" marginleft="100px" color="#052e16">
+            More like this
+          </Title>
+          <FlexItems width="100%" height="100%">
+            <ContainerColumn width="400px" height="400px" marginleft="100xp" className="w-[400px] h-[400px] flex items-center flex-col ml-[100px]">
+              <FormBox width="100%" height="250px">
+                <Image width="100%" height="100%" src={image6} alt=""/>
+              </FormBox>
+              <FormBox width="100%" height="150px">
+                <ButtonMerch>
+                  Cups & Merch
+                </ButtonMerch>
+                <Title font="700" margintop="20px">
+                  New Starbucks Fall Merchandise{" "}
+                </Title>
+                <Title font="300" margintop="20px">3 min read</Title>
+              </FormBox>
+            </ContainerColumn>
+            <ContainerColumn width="400px" height="400px" marginleft="50px">
+              <FormBox width="100%" height="250px">
+                <Image width="100%" height="100%" src={image7} alt="" />
+              </FormBox>
+              <FormBox width="100%" height="150px">
+                <ButtonMerch>
+                  Cups & Merch
+                </ButtonMerch>
+                <Title font="700" margintop="20px">
+                  From sketchbook to Starbucks: The story behind the newest
+                  artist collaboration merch{" "}
+                </Title>
+                <Title margintop="20px" font="300">3 min read</Title>
+              </FormBox>
+            </ContainerColumn>
+          </FlexItems>
+        </CenteredSection>
       </DivMargin>
     </div>
   );
