@@ -1,21 +1,27 @@
-import ListBtn from "./ListBtn"
-import IconFooter from "./IconFooter"
-import FooterTag from "./StyledFooter/FooterStayle"
-import DivBox from "./StyledFooter/DivBox"
+import { useLocation } from "react-router-dom";
+import ListBtn from "./ListBtn";
+import IconFooter from "./IconFooter";
+import FooterTag from "./StyledFooter/FooterStayle";
+import DivBox from "./StyledFooter/DivBox";
+import Line from "./StyledFooter/Line";
+
 const Footer = () => {
+  const location = useLocation();
   return (
     <div>
+      {location.pathname.toLowerCase() !== "/learnmore" &&(
         <FooterTag>
-            <DivBox>
-                <ListBtn />
-            </DivBox>
-            <div className="w-[1450px] h-[1.5px] bg-slate-400"></div>
-            <DivBox>
-                <IconFooter />
-            </DivBox>  
+          <DivBox>
+            <ListBtn />
+          </DivBox>
+          <Line />
+          <DivBox>
+            <IconFooter />
+          </DivBox>
         </FooterTag>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

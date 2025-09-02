@@ -15,7 +15,7 @@ import DivIcon from "./StyledSections/DivIcon";
 import Icon from "./StyledSections/Icon";
 import ButtonDownload from "./StyledSections/ButtonDownload";
 import TimeBar from "./StyledSections/TimeBar";
-import Lain from "./StyledSections/Lain";
+import Line from "./StyledSections/Line";
 import Title from "./StyledSections/Title";
 import ColorSpan from "./StyledSections/ColorSpan";
 import Image from "./StyledSections/Image";
@@ -57,7 +57,7 @@ const AboutUsSection = () => {
               <Title font="300" size="15px" color="#64748b">
                 3 min read
               </Title>
-              <Lain marginleft="30px" marginright="30px" />
+              <Line marginleft="30px" marginright="30px" />
               <Title font="300" size="15px" color="#64748b">
                 July 7, 2025
               </Title>

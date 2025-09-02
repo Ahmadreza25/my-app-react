@@ -9,7 +9,7 @@ interface LainProps{
     
 }
 
-const Lain = styled.div<LainProps>`
+const Line = styled.div<LainProps>`
     width: 1px;
     height: 100%;
     background-color: #cbd5e1;
@@ -20,4 +20,4 @@ const Lain = styled.div<LainProps>`
 `
 
 
-export default Lain
+export default Line

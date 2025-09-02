@@ -1,5 +1,6 @@
 import AboutUsSection from "./SectionsPageLearnMore/AboutUsSection";
 import BannerLearnMore from "./SectionsPageLearnMore/BannerLearnMore";
+import FooterLesrnMore from "./SectionsPageLearnMore/FooterLesrnMore";
 import HeaderLesrnMore from "./SectionsPageLearnMore/HeaderLesrnMore";
 import StickyWrapper from "./StyledPageLearnMore/StickyWrapper";
 const PageLearnMore = () => {
@@ -14,6 +15,9 @@ const PageLearnMore = () => {
         </div>
         <div>
           <AboutUsSection />
+        </div>
+        <div>
+          <FooterLesrnMore />
         </div>
       </div>
     </div>
