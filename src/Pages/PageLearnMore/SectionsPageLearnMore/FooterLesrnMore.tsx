@@ -1,14 +1,15 @@
 import i1 from "../../../Images/icons/Flash.png";
-import i2 from "../../../Images/icons/instagram.png"
-import i3 from "../../../Images/icons/link2.png"
-import i4 from "../../../Images/icons/tik-tok.png"
-import i5 from "../../../Images/icons/youtube.png"
-import logo from "../../../Images/logo/logo-header.png"
+import i2 from "../../../Images/icons/instagram.png";
+import i3 from "../../../Images/icons/link2.png";
+import i4 from "../../../Images/icons/tik-tok.png";
+import i5 from "../../../Images/icons/youtube.png";
+import logo from "../../../Images/logo/logo-header.png";
+import CenteredBox from "./StyledSections/CenteredBox";
 const FooterLesrnMore = () => {
   return (
     <div>
       <div className="w-[100%] h-[900px] bg-green-950 mt-[100px] felx items-center justify-center flex-col">
-        <div className="w-[100%] h-[200px] flex items-center justify-center">
+        <CenteredBox width="100%" height="200px">
           <div className="flex items-center justify-center">
             <div className="w-[200px]">
               <p className="text-center font-[800] text-slate-100 text-[20px]">
@@ -26,11 +27,13 @@ const FooterLesrnMore = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-[100%] h-[1100px] bg-slate-100 rounded-t-[50px] flex items-center justify-center flex-col">
-          <div className="w-[1400px] h-[450px] flex items-center justify-center">
-            <div className="w-[700px] h-[450px] mr-[20px]">
-              <p className="font-[800] text-[30px] text-green-950">Stay In Touch</p>
+        </CenteredBox>
+        <div className="w-[100%] h-[1000px] bg-slate-100 rounded-t-[50px] flex items-center justify-center flex-col">
+          <div className="w-[100%] h-[400px] flex items-center justify-center">
+            <div className="w-[40%] h-[400px] mr-[20px]">
+              <p className="font-[800] text-[30px] text-green-950">
+                Stay In Touch
+              </p>
               <p className="mt-[30px] w-[600px] font-[600] text-[20px] text-green-950">
                 Subscribe to all the latest Starbucks stories and news delivered
                 right to your inbox.
@@ -39,49 +42,174 @@ const FooterLesrnMore = () => {
                 <p className="font-[700] text-slate-800">Email Address</p>
                 <div className="flex items-center mt-[10px]">
                   <div>
-                    <input type="text" className="w-[500px] h-[50px] border-[1px] border-green-950 outline-none bg-slate-100 pl-[10px] rounded-[50px]" />
+                    <input
+                      type="text"
+                      className="w-[500px] h-[50px] border-[1px] border-green-950 outline-none bg-slate-100 pl-[10px] rounded-[50px]"
+                    />
                   </div>
                   <div className="ml-[20px]">
-                    <button 
-                    className="w-[110px] h-[50px] text-slate-100 bg-green-800 font-[700] rounded-[50px]
+                    <button
+                      className="w-[110px] h-[50px] text-slate-100 bg-green-800 font-[700] rounded-[50px]
                     hover:bg-slate-100 hover:text-green-700 hover:border-[1px] hover:border-green-800
                     transition-all duration-300 ease-in-out
-                    ">Sign Up</button>
+                    "
+                    >
+                      Sign Up
+                    </button>
                   </div>
                 </div>
               </div>
               <div className="flex items-center mt-[50px]">
                 <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center">
-                  <img src={i2} alt="" className="w-[18px]"/>
+                  <img src={i2} alt="" className="w-[18px]" />
                 </div>
                 <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center ml-[20px]">
-                  <img src={i3} alt="" className="w-[18px]"/>
+                  <img src={i3} alt="" className="w-[18px]" />
                 </div>
                 <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center ml-[20px]">
-                  <img src={i4} alt="" className="w-[18px]"/>
+                  <img src={i4} alt="" className="w-[18px]" />
                 </div>
                 <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center ml-[20px]">
-                  <img src={i5} alt="" className="w-[18px]"/>
+                  <img src={i5} alt="" className="w-[18px]" />
                 </div>
               </div>
             </div>
-            <div className="w-[700px] h-[450px] ml-[20px]">
-              <p className="font-[800] text-[30px] text-green-950">Press Center</p>
-              <p className="mt-[30px] w-[600px] font-[600] text-[20px] text-green-950">All the latest company news and leadership perspectives.</p>
+            <div className="w-[40%] h-[400px] ml-[50px]">
+              <p className="font-[800] text-[30px] text-green-950">
+                Press Center
+              </p>
+              <p className="mt-[30px] w-[600px] font-[600] text-[20px] text-green-950">
+                All the latest company news and leadership perspectives.
+              </p>
               <div className="mt-[50px]">
                 <ul>
-                  <li className="font-[700] text-[16px] text-green-700 border-b border-green-700 w-[110px]">Press Releases</li>
-                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[120px]">Company News</li>
-                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[195px]">Starbucks For The Record</li>
-                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[85px]">Leadership</li>
+                  <li className="font-[700] text-[16px] text-green-700 border-b border-green-700 w-[110px]">
+                    Press Releases
+                  </li>
+                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[120px]">
+                    Company News
+                  </li>
+                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[195px]">
+                    Starbucks For The Record
+                  </li>
+                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[85px]">
+                    Leadership
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="flex items-center justify-center w-[100%] h-[100px]">
             <div className="w-[600px] h-[1px] bg-slate-900"></div>
-            <div><img src={logo} alt="" className="w-[70px]"/></div>
+            <div>
+              <img src={logo} alt="" className="w-[70px]" />
+            </div>
             <div className="w-[600px] h-[1px] bg-slate-900"></div>
+          </div>
+          <div className="mt-[20px]">
+            <button
+              className="w-[200px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
+              transition-all duration-[0.6s] ease-in-out"
+            >
+              Starbucks.com
+            </button>
+            <button
+              className="w-[180px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
+              transition-all duration-[0.6s] ease-in-out"
+            >
+              Career Center
+            </button>
+            <button
+              className="w-[130px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
+              transition-all duration-[0.6s] ease-in-out"
+            >
+              Reserve
+            </button>
+            <button
+              className="w-[130px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
+              transition-all duration-[0.6s] ease-in-out"
+            >
+              At Home
+            </button>
+          </div>
+          <div className="w-[100%] h-[200px] mt-[50px] flex items center justify-center">
+            <div className="w-[200px] h-[250px]">
+              <p className="font-[700] text-slate-800">Canada</p>
+              <ul className="mt-[30px]">
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
+                  English
+                </li>
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none mt-[20px]">
+                  Français
+                </li>
+              </ul>
+            </div>
+            <div className="w-[200px] h-[200px]">
+              <p className="font-[700] text-slate-800">USA</p>
+              <ul className="mt-[30px]">
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
+                  English
+                </li>
+              </ul>
+            </div>
+            <div className="w-[200px] h-[200px]">
+              <p className="font-[700] text-slate-800">EMEA</p>
+              <ul className="mt-[30px]">
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
+                  English
+                </li>
+              </ul>
+            </div>
+            <div className="w-[200px] h-[200px]">
+              <p className="font-[700] text-slate-800">Latin America</p>
+              <ul className="mt-[30px]">
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
+                  English
+                </li>
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none mt-[20px]">
+                  Español
+                </li>
+                <li className="border-b-[1.5px] border-slate-800 w-[70px] hover:border-none mt-[20px]">
+                  Português
+                </li>
+              </ul>
+            </div>
+            <div className="w-[200px] h-[200px]">
+              <p className="font-[700] text-slate-800">Asia</p>
+              <ul className="mt-[30px]">
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
+                  English
+                </li>
+              </ul>
+            </div>
+            <div className="w-[200px] h-[200px]">
+              <p className="font-[700] text-slate-800">Japan</p>
+              <ul className="mt-[30px]">
+                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
+                  日本語
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-[80%] h-[80px] flex items-center justify-center border-t-[1px] border-slate-800 mt-[50px]">
+              <button className="w-[110px] font-[700] border-b-[2px] border-slate-800 m-[5px] hover:border-none">
+              Starbucks.com
+              </button>
+              <button className="w-[110px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
+              Accessibility
+              </button>
+              <button className="w-[110px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
+              Privacy Notice
+              </button>
+              <button className="w-[300px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
+              Do Not Share My Personal Information
+              </button>
+              <button className="w-[150px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
+              Cookie Preferences
+              </button>
+              <p className="">
+              © 2025 Starbucks Coffee Company
+              </p>
           </div>
         </div>
       </div>
