@@ -1,73 +1,66 @@
-import DivList from "./StyledFooter/DivList"
-import Li from "./StyledFooter/Li"
+import ShortcutList from "./StyledFooter/ShortcutList";
+import Shortcut from "./StyledFooter/Shortcut";
+import Title from "./StyledFooter/Title";
+import NavList from "./StyledFooter/NavList";
+import NavItem from "./StyledFooter/NavItem";
 const ListBtn = () => {
   return (
-    <div>
-        <div className="flex items-center justify-between">
-            <DivList>
-                <h1 className="font-semibold text-[18px]">
-                    About Us
-                </h1>
-                <ul className="mt-[20px]">
-                    <Li>Our Company</Li>
-                    <Li>Our Coffee</Li>
-                    <Li>About Starbucks</Li>
-                    <Li>Starbucks Archive</Li>
-                    <Li>Investor Relations</Li>
-                    <Li>Customer Service</Li>
-                    <Li>Contact Us</Li>
-                </ul>
-            </DivList>
-            <DivList>
-                <h1 className="font-semibold text-[18px]">
-                    Careers
-                </h1>
-                <ul className="mt-[20px]">
-                    <Li>Culture and Values</Li>
-                    <Li>Belonging at Starbucks</Li>
-                    <Li>College Achievement Plan</Li>
-                    <Li>Alumni Community</Li>
-                    <Li>U.S. Careers</Li>
-                    <Li>International Careers</Li>
-                </ul>
-            </DivList>
-            <DivList>
-                <h1 className="font-semibold text-[18px]">
-                    Social Impact
-                </h1>
-                <ul className="mt-[20px]">
-                    <Li>Communities</Li>
-                    <Li>Starbucks Foundation</Li>
-                    <Li>Sustainability</Li>
-                    <Li>Environmental and Social Impact Reporting</Li>
-                </ul>
-            </DivList>
-            <DivList>
-                <h1 className="font-semibold text-[18px]">
-                    For Business Partners
-                </h1>
-                <ul className="mt-[20px]">
-                    <Li>Landlord Support Center</Li>
-                    <Li>Suppliers</Li>
-                    <Li>Corporate Gift Card Sales</Li>
-                    <Li>Office and Foodservice Coffee</Li>
-                </ul>
-            </DivList>
-            <DivList>
-                <h1 className="font-semibold text-[18px]">
-                    Order and Pick Up
-                </h1>
-                <ul className="mt-[20px]">
-                    <Li>Order on the App</Li>
-                    <Li>Order on the Web</Li>
-                    <Li>Delivery</Li>
-                    <Li>Order and Pick Up Options</Li>
-                    <Li>Explore and Find Coffee for Home</Li>
-                </ul>
-            </DivList>
-        </div>
-    </div>
-  )
-}
+    <>
+      <Shortcut>
+        <ShortcutList>
+          <Title>About Us</Title>
+          <NavList>
+            <NavItem>Our Company</NavItem>
+            <NavItem>Our Coffee</NavItem>
+            <NavItem>About Starbucks</NavItem>
+            <NavItem>Starbucks Archive</NavItem>
+            <NavItem>Investor Relations</NavItem>
+            <NavItem>Customer Service</NavItem>
+            <NavItem>Contact Us</NavItem>
+          </NavList>
+        </ShortcutList>
+        <ShortcutList>
+          <Title>Careers</Title>
+          <NavList>
+            <NavItem>Culture and Values</NavItem>
+            <NavItem>Belonging at Starbucks</NavItem>
+            <NavItem>College Achievement Plan</NavItem>
+            <NavItem>Alumni Community</NavItem>
+            <NavItem>U.S. Careers</NavItem>
+            <NavItem>International Careers</NavItem>
+          </NavList>
+        </ShortcutList>
+        <ShortcutList>
+          <Title>Social Impact</Title>
+          <NavList>
+            <NavItem>Communities</NavItem>
+            <NavItem>Starbucks Foundation</NavItem>
+            <NavItem>Sustainability</NavItem>
+            <NavItem>Environmental and Social Impact Reporting</NavItem>
+          </NavList>
+        </ShortcutList>
+        <ShortcutList>
+          <Title>For Business Partners</Title>
+          <NavList>
+            <NavItem>Landlord Support Center</NavItem>
+            <NavItem>Suppliers</NavItem>
+            <NavItem>Corporate Gift Card Sales</NavItem>
+            <NavItem>Office and Foodservice Coffee</NavItem>
+          </NavList>
+        </ShortcutList>
+        <ShortcutList>
+          <Title>Order and Pick Up</Title>
+          <NavList>
+            <NavItem>Order on the App</NavItem>
+            <NavItem>Order on the Web</NavItem>
+            <NavItem>Delivery</NavItem>
+            <NavItem>Order and Pick Up Options</NavItem>
+            <NavItem>Explore and Find Coffee for Home</NavItem>
+          </NavList>
+        </ShortcutList>
+      </Shortcut>
+    </>
+  );
+};
 
-export default ListBtn
+export default ListBtn;

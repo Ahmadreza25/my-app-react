@@ -1,26 +1,26 @@
 import { useLocation } from "react-router-dom";
 import ListBtn from "./ListBtn";
 import IconFooter from "./IconFooter";
-import FooterTag from "./StyledFooter/FooterStayle";
-import DivBox from "./StyledFooter/DivBox";
+import AppFooter from "./StyledFooter/AppFooter";
+import ItemsFooter from "./StyledFooter/ItemsFooter";
 import Line from "./StyledFooter/Line";
 
 const Footer = () => {
   const location = useLocation();
   return (
-    <div>
-      {location.pathname.toLowerCase() !== "/learnmore" &&(
-        <FooterTag>
-          <DivBox>
+    <>
+      {location.pathname.toLowerCase() !== "/learnmore" && (
+        <AppFooter>
+          <ItemsFooter>
             <ListBtn />
-          </DivBox>
+          </ItemsFooter>
           <Line />
-          <DivBox>
+          <ItemsFooter>
             <IconFooter />
-          </DivBox>
-        </FooterTag>
+          </ItemsFooter>
+        </AppFooter>
       )}
-    </div>
+    </>
   );
 };
 

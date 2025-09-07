@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 
-const FooterTag = styled.footer `
+const AppFooter = styled.footer `
     width: 100%;
     height: 1000px;
     box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.2);
@@ -13,4 +13,4 @@ const FooterTag = styled.footer `
     flex-direction: column;
 `
 
-export default FooterTag
+export default AppFooter
