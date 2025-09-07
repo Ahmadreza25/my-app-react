@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-
-
-
-
 const DivIcon = styled.div`
     width: 50px;
     height: 50px;

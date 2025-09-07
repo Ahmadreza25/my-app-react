@@ -57,7 +57,7 @@ const AboutUsSection = () => {
               <Title font="300" size="15px" color="#64748b">
                 3 min read
               </Title>
-              <Line marginleft="30px" marginright="30px" />
+              <Line width="1px" height="100%" bg="#cbd5e1" marginleft="30px" marginright="30px" />
               <Title font="300" size="15px" color="#64748b">
                 July 7, 2025
               </Title>

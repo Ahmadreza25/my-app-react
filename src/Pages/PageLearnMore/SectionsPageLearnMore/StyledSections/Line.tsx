@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-interface LainProps{
-
-    marginleft?:string;
-    margintop?:string;
-    marginright?:string;
-    marginbottom?:string;
-    
+interface LainProps {
+  width?: string;
+  height?: string;
+  marginleft?: string;
+  margintop?: string;
+  marginright?: string;
+  marginbottom?: string;
+  bg?: string;
 }
 
 const Line = styled.div<LainProps>`
-    width: 1px;
-    height: 100%;
-    background-color: #cbd5e1;
-    margin-left: ${props => props.marginleft};
-    margin-top: ${props => props.margintop};
-    margin-right: ${props => props.marginright};
-    margin-bottom: ${props => props.marginbottom};
-`
+  width: ${props => props.width};
+  height: ${props => props.height};
+  background-color: ${props => props.bg};
+  margin-left: ${props => props.marginleft};
+  margin-top: ${props => props.margintop};
+  margin-right: ${props => props.marginright};
+  margin-bottom: ${props => props.marginbottom};
+`;
 
-
-export default Line
+export default Line;

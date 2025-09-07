@@ -5,214 +5,204 @@ import i4 from "../../../Images/icons/tik-tok.png";
 import i5 from "../../../Images/icons/youtube.png";
 import logo from "../../../Images/logo/logo-header.png";
 import CenteredBox from "./StyledSections/CenteredBox";
+import FormBox from "./StyledSections/FormBox";
+import FlexItems from "./StyledSections/FlexItems";
+import DivMargin from "./StyledSections/DivMargin";
+import Title from "./StyledSections/Title";
+import Icon from "./StyledSections/Icon";
+import BoxIcon from "./StyledSections/BoxIcon";
+import LinkPress from "./StyledSections/LinkPress";
+import Line from "./StyledSections/Line";
+import Image from "./StyledSections/Image";
+import ListTab from "./StyledSections/ListTab";
+import TabItem from "./StyledSections/TabItem";
+import BtnSignUp from "./StyledSections/BtnSignUp";
+import AddressInput from "./StyledSections/AddressInput";
+import PressList from "./StyledSections/PressList";
+import ShortcutKey from "./StyledSections/ShortcutKey";
+import RegistrationSection from "./StyledSections/RegistrationSection";
+import PrivacySection from "./StyledSections/PrivacySection";
+import PrivacyButton from "./StyledSections/PrivacyButton";
+import Media from "./StyledSections/Media";
+import Circle from "./StyledSections/Circle";
+import CompanyTitle from "./StyledSections/CompanyTitle";
+import Wrapper from "./StyledSections/Wrapper";
 const FooterLesrnMore = () => {
   return (
     <div>
-      <div className="w-[100%] h-[900px] bg-green-950 mt-[100px] felx items-center justify-center flex-col">
+      <Wrapper>
         <CenteredBox width="100%" height="200px">
-          <div className="flex items-center justify-center">
-            <div className="w-[200px]">
-              <p className="text-center font-[800] text-slate-100 text-[20px]">
-                THE STARBUCHS COFFEE COMPANY
-              </p>
-            </div>
-            <div className="w-[300px] ml-[50px] flex items-center">
-              <div className="w-[40px] h-[40px] border-[1px] border-slate-100 flex items-center justify-center rounded-[100%]">
-                <img src={i1} alt="" className="w-[20px]" />
-              </div>
-              <div className="ml-[10px]">
-                <p className="font-[600] text-slate-100">
+          <CenteredBox>
+            <FormBox width="200px">
+              <CompanyTitle>THE STARBUCHS COFFEE COMPANY</CompanyTitle>
+            </FormBox>
+            <FlexItems width="300px" marginleft="50px">
+              <Circle>
+                <Icon width="20px" src={i1} alt="" />
+              </Circle>
+              <DivMargin marginleft="10px">
+                <Title font="600" color="#f1f5f9">
                   Our Values & Commitments
-                </p>
-              </div>
-            </div>
-          </div>
+                </Title>
+              </DivMargin>
+            </FlexItems>
+          </CenteredBox>
         </CenteredBox>
-        <div className="w-[100%] h-[1000px] bg-slate-100 rounded-t-[50px] flex items-center justify-center flex-col">
-          <div className="w-[100%] h-[400px] flex items-center justify-center">
-            <div className="w-[40%] h-[400px] mr-[20px]">
-              <p className="font-[800] text-[30px] text-green-950">
+        <Media>
+          <CenteredBox width="100%" height="400px">
+            <FormBox width="40%" height="400px" marginright="20px">
+              <Title font="800" size="30px" color="#052e16">
                 Stay In Touch
-              </p>
-              <p className="mt-[30px] w-[600px] font-[600] text-[20px] text-green-950">
+              </Title>
+              <Title
+                margintop="30px"
+                width="600px"
+                font="600"
+                size="20px"
+                color="#052e16"
+              >
                 Subscribe to all the latest Starbucks stories and news delivered
                 right to your inbox.
-              </p>
-              <div className="flex flex-col mt-[50px]">
-                <p className="font-[700] text-slate-800">Email Address</p>
-                <div className="flex items-center mt-[10px]">
-                  <div>
-                    <input
-                      type="text"
-                      className="w-[500px] h-[50px] border-[1px] border-green-950 outline-none bg-slate-100 pl-[10px] rounded-[50px]"
-                    />
-                  </div>
-                  <div className="ml-[20px]">
-                    <button
-                      className="w-[110px] h-[50px] text-slate-100 bg-green-800 font-[700] rounded-[50px]
-                    hover:bg-slate-100 hover:text-green-700 hover:border-[1px] hover:border-green-800
-                    transition-all duration-300 ease-in-out
-                    "
-                    >
-                      Sign Up
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center mt-[50px]">
-                <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center">
-                  <img src={i2} alt="" className="w-[18px]" />
-                </div>
-                <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center ml-[20px]">
-                  <img src={i3} alt="" className="w-[18px]" />
-                </div>
-                <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center ml-[20px]">
-                  <img src={i4} alt="" className="w-[18px]" />
-                </div>
-                <div className="w-[45px] h-[45px] rounded-[100%] border-[1px] border-green-900 flex items-center justify-center ml-[20px]">
-                  <img src={i5} alt="" className="w-[18px]" />
-                </div>
-              </div>
-            </div>
-            <div className="w-[40%] h-[400px] ml-[50px]">
-              <p className="font-[800] text-[30px] text-green-950">
+              </Title>
+              <RegistrationSection>
+                <Title font="700" color="#1e293b">
+                  Email Address
+                </Title>
+                <FlexItems margintop="10px">
+                  <AddressInput type="text" />
+                  <DivMargin marginleft="20px">
+                    <BtnSignUp>Sign Up</BtnSignUp>
+                  </DivMargin>
+                </FlexItems>
+              </RegistrationSection>
+              <FlexItems margintop="50px">
+                <BoxIcon>
+                  <Icon width="18px" src={i2} alt="" />
+                </BoxIcon>
+                <BoxIcon marginleft="20px">
+                  <Icon width="18px" src={i3} alt="" />
+                </BoxIcon>
+                <BoxIcon marginleft="20px">
+                  <Icon width="18px" src={i4} alt="" />
+                </BoxIcon>
+                <BoxIcon marginleft="20px">
+                  <Icon width="18px" src={i5} alt="" />
+                </BoxIcon>
+              </FlexItems>
+            </FormBox>
+            <FormBox width="40%" height="400px" marginleft="50px">
+              <Title font="800" size="30px" color="#052e16">
                 Press Center
-              </p>
-              <p className="mt-[30px] w-[600px] font-[600] text-[20px] text-green-950">
+              </Title>
+              <Title
+                margintop="30px"
+                width="600px"
+                font="600"
+                size="20px"
+                color="#052e16"
+              >
                 All the latest company news and leadership perspectives.
-              </p>
-              <div className="mt-[50px]">
-                <ul>
-                  <li className="font-[700] text-[16px] text-green-700 border-b border-green-700 w-[110px]">
-                    Press Releases
-                  </li>
-                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[120px]">
+              </Title>
+              <DivMargin margintop="50px">
+                <PressList>
+                  <LinkPress width="110px">Press Releases</LinkPress>
+                  <LinkPress width="120px" margintop="10px">
                     Company News
-                  </li>
-                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[195px]">
+                  </LinkPress>
+                  <LinkPress width="195px" margintop="10px">
                     Starbucks For The Record
-                  </li>
-                  <li className="font-[700] text-[16px] text-green-700 mt-[10px] border-b border-green-700 w-[85px]">
+                  </LinkPress>
+                  <LinkPress width="85px" margintop="10px">
                     Leadership
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center w-[100%] h-[100px]">
-            <div className="w-[600px] h-[1px] bg-slate-900"></div>
-            <div>
-              <img src={logo} alt="" className="w-[70px]" />
-            </div>
-            <div className="w-[600px] h-[1px] bg-slate-900"></div>
-          </div>
-          <div className="mt-[20px]">
-            <button
-              className="w-[200px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
-              transition-all duration-[0.6s] ease-in-out"
-            >
+                  </LinkPress>
+                </PressList>
+              </DivMargin>
+            </FormBox>
+          </CenteredBox>
+          <CenteredBox width="100%" height="100px">
+            <Line width="600px" height="1px" bg="#0f172a" />
+            <Image width="70px" src={logo} alt="" />
+            <Line width="600px" height="1px" bg="#0f172a" />
+          </CenteredBox>
+          <DivMargin margintop="20px">
+            <ShortcutKey width="200px" height="50px">
               Starbucks.com
-            </button>
-            <button
-              className="w-[180px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
-              transition-all duration-[0.6s] ease-in-out"
-            >
+            </ShortcutKey>
+            <ShortcutKey width="180px" height="50px">
               Career Center
-            </button>
-            <button
-              className="w-[130px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
-              transition-all duration-[0.6s] ease-in-out"
-            >
+            </ShortcutKey>
+            <ShortcutKey width="130px" height="50px">
               Reserve
-            </button>
-            <button
-              className="w-[130px] h-[50px] font-[500] text-[23px] text-slate-800 rounded-[50px] m-[5px] hover:border-[1px] hover:border-slate-800
-              transition-all duration-[0.6s] ease-in-out"
-            >
+            </ShortcutKey>
+            <ShortcutKey width="130px" height="50px">
               At Home
-            </button>
-          </div>
-          <div className="w-[100%] h-[200px] mt-[50px] flex items center justify-center">
-            <div className="w-[200px] h-[250px]">
-              <p className="font-[700] text-slate-800">Canada</p>
-              <ul className="mt-[30px]">
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
-                  English
-                </li>
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none mt-[20px]">
-                  Français
-                </li>
-              </ul>
-            </div>
-            <div className="w-[200px] h-[200px]">
-              <p className="font-[700] text-slate-800">USA</p>
-              <ul className="mt-[30px]">
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
-                  English
-                </li>
-              </ul>
-            </div>
-            <div className="w-[200px] h-[200px]">
-              <p className="font-[700] text-slate-800">EMEA</p>
-              <ul className="mt-[30px]">
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
-                  English
-                </li>
-              </ul>
-            </div>
-            <div className="w-[200px] h-[200px]">
-              <p className="font-[700] text-slate-800">Latin America</p>
-              <ul className="mt-[30px]">
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
-                  English
-                </li>
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none mt-[20px]">
-                  Español
-                </li>
-                <li className="border-b-[1.5px] border-slate-800 w-[70px] hover:border-none mt-[20px]">
-                  Português
-                </li>
-              </ul>
-            </div>
-            <div className="w-[200px] h-[200px]">
-              <p className="font-[700] text-slate-800">Asia</p>
-              <ul className="mt-[30px]">
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
-                  English
-                </li>
-              </ul>
-            </div>
-            <div className="w-[200px] h-[200px]">
-              <p className="font-[700] text-slate-800">Japan</p>
-              <ul className="mt-[30px]">
-                <li className="border-b-[1.5px] border-slate-800 w-[55px] hover:border-none">
-                  日本語
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[80%] h-[80px] flex items-center justify-center border-t-[1px] border-slate-800 mt-[50px]">
-              <button className="w-[110px] font-[700] border-b-[2px] border-slate-800 m-[5px] hover:border-none">
-              Starbucks.com
-              </button>
-              <button className="w-[110px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
-              Accessibility
-              </button>
-              <button className="w-[110px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
-              Privacy Notice
-              </button>
-              <button className="w-[300px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
+            </ShortcutKey>
+          </DivMargin>
+          <CenteredBox width="100%" height="200px" margintop="50px">
+            <FormBox width="200px" height="200px">
+              <Title font="700" color="#1e293b">
+                Canada
+              </Title>
+              <ListTab margintop="30px">
+                <TabItem>English</TabItem>
+                <TabItem margintop="20px">Français</TabItem>
+              </ListTab>
+            </FormBox>
+            <FormBox width="200px" height="200px">
+              <Title font="700" color="#1e293b">
+                USA
+              </Title>
+              <ListTab margintop="30px">
+                <TabItem>English</TabItem>
+              </ListTab>
+            </FormBox>
+            <FormBox width="200px" height="200px">
+              <Title font="700" color="#1e293b">
+                EMEA
+              </Title>
+              <ListTab margintop="30px">
+                <TabItem>English</TabItem>
+              </ListTab>
+            </FormBox>
+            <FormBox width="200px" height="200px">
+              <Title font="700" color="#1e293b">
+                Latin America
+              </Title>
+              <ListTab margintop="30px">
+                <TabItem>English</TabItem>
+                <TabItem margintop="20px">Español</TabItem>
+                <TabItem margintop="20px">Português</TabItem>
+              </ListTab>
+            </FormBox>
+            <FormBox width="200px" height="200px">
+              <Title font="700" color="#1e293b">
+                Asia
+              </Title>
+              <ListTab margintop="30px">
+                <TabItem>English</TabItem>
+              </ListTab>
+            </FormBox>
+            <FormBox width="200px" height="200px">
+              <Title font="700" color="#1e293b">
+                Japan
+              </Title>
+              <ListTab margintop="30px">
+                <TabItem>日本語</TabItem>
+              </ListTab>
+            </FormBox>
+          </CenteredBox>
+          <PrivacySection>
+            <PrivacyButton width="110px">Starbucks.com</PrivacyButton>
+            <PrivacyButton width="110px">Accessibility</PrivacyButton>
+            <PrivacyButton width="110px">Privacy Notice</PrivacyButton>
+            <PrivacyButton width="300px">
               Do Not Share My Personal Information
-              </button>
-              <button className="w-[150px] font-[700] border-b-[2px] border-slate-800 m-[10px] hover:border-none">
-              Cookie Preferences
-              </button>
-              <p className="">
-              © 2025 Starbucks Coffee Company
-              </p>
-          </div>
-        </div>
-      </div>
+            </PrivacyButton>
+            <PrivacyButton width="150px">Cookie Preferences</PrivacyButton>
+            <Title font="400">© 2025 Starbucks Coffee Company</Title>
+          </PrivacySection>
+        </Media>
+      </Wrapper>
     </div>
   );
 };
