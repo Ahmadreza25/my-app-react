@@ -1,5 +1,10 @@
 import logo from "../../Images/logo/logo-header.png";
 import { Link, useLocation } from "react-router-dom";
+import NavHeader from "./StyledHeader/NavHeader";
+import NavList from "./StyledHeader/NavList";
+import Circle from "./StyledHeader/Circle";
+import ImageLogo from "./StyledHeader/ImageLogo";
+import ItemNav from "./StyledHeader/ItemNav";
 
 const Logo = () => {
   const location = useLocation();
@@ -8,32 +13,26 @@ const Logo = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-center ml-[50px]">
+      <NavHeader>
         <Link to="/">
-          <div className="w-[60px] h-[60px] border-[50%]">
-            <img src={logo} alt="" />
-          </div>
+          <Circle>
+            <ImageLogo src={logo} alt="Logo" />
+          </Circle>
         </Link>
         {!pagehidd.includes(location.pathname.toLowerCase()) && (
-          <div className="ml-[30px]">
+          <NavList>
             <Link to="/Menu">
-              <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
-                MENU
-              </button>
+              <ItemNav>MENU</ItemNav>
             </Link>
             <Link to="/Rewards">
-              <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
-                REWARDS
-              </button>
+              <ItemNav>REWARDS</ItemNav>
             </Link>
             <Link to="/Gift">
-              <button className="text-[15px] font-bold ml-[25px] hover:text-green-700">
-                GIFT CARDS
-              </button>
+              <ItemNav>GIFT CARDS</ItemNav>
             </Link>
-          </div>
+          </NavList>
         )}
-      </div>
+      </NavHeader>
     </div>
   );
 };
