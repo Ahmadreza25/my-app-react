@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 
 
-const UlList = styled.ul`
+const List = styled.ul`
     margin-top:20px;
 `
 
 
-export default UlList
+export default List

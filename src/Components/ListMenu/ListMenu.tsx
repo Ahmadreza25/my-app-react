@@ -1,16 +1,16 @@
 import MenuItem from "./StyledListMenu/MenuItem";
-import UlList from "./StyledListMenu/UlList";
-import DivMargin from "./StyledListMenu/DivMargin";
+import List from "./StyledListMenu/List";
+import ContainerList from "./StyledListMenu/ContainerList";
 import MainContainer from "./StyledListMenu/MainContainer";
 import SectionTitle from "./StyledListMenu/SectionTitle";
 
 const ListMenu = () => {
   return (
-    <div>
-      <MainContainer width="450px">
-        <DivMargin marginleft="80px" margintop="30px">
+    <>
+      <MainContainer>
+        <ContainerList>
           <SectionTitle>Drinks</SectionTitle>
-          <UlList>
+          <List>
             <MenuItem>Hot Coffee</MenuItem>
             <MenuItem>Cold Coffee</MenuItem>
             <MenuItem>Hot Tea</MenuItem>
@@ -19,28 +19,28 @@ const ListMenu = () => {
             <MenuItem>Frappuccino® Blended Beverage</MenuItem>
             <MenuItem>Hot Chocolate, Lemonade & More</MenuItem>
             <MenuItem>Bottled Beverages</MenuItem>
-          </UlList>
-        </DivMargin>
-        <DivMargin marginleft="80px" margintop="30px">
+          </List>
+        </ContainerList>
+        <ContainerList>
           <SectionTitle>Food</SectionTitle>
-          <UlList>
+          <List>
             <MenuItem>Breakfast</MenuItem>
             <MenuItem>Bakery</MenuItem>
             <MenuItem>Treats</MenuItem>
             <MenuItem>Lunch</MenuItem>
             <MenuItem>Snacks</MenuItem>
-          </UlList>
-        </DivMargin>
-        <DivMargin marginleft="80px" margintop="30px">
+          </List>
+        </ContainerList>
+        <ContainerList>
           <SectionTitle>At Home Coffee</SectionTitle>
-          <UlList>
+          <List>
             <MenuItem>Whole Bean</MenuItem>
             <MenuItem>VIA® Instant</MenuItem>
             <MenuItem>Shopping Bag</MenuItem>
-          </UlList>
-        </DivMargin>
+          </List>
+        </ContainerList>
       </MainContainer>
-    </div>
+    </>
   );
 };
 

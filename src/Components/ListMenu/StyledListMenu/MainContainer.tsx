@@ -1,15 +1,7 @@
 import styled from "styled-components";
 
-interface DivBoxProps  {
-    width?:string;
-    height?:string;
-}
-
-
-
-const MainContainer = styled.div<DivBoxProps>`
-    width:${props => props.width};
-    height:${props => props.height};
+const MainContainer = styled.div`
+    width:450px;
     display: flex;
     flex-direction: column;
 `
